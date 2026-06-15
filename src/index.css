@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Color Palette matching the Technical Dashboard theme exactly */
+  --color-primary: #2D5BFF;
+  --color-primary-fixed-dim: #2D5BFF;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #16161A;
+  --color-on-primary-container: #2D5BFF;
+
+  --color-success: #00E676;
+  --color-warning: #FF9100;
+  --color-error: #D50000;
+
+  --color-surface: #111114;
+  --color-surface-container: #16161A;
+  --color-on-surface: #E0E0E0;
+  --color-on-surface-variant: #8E9299;
+  --color-outline: #2A2A2E;
+}
+
+/* Custom CSS variables & overrides for Technical Data Grid */
+body {
+  background-color: #0A0A0B;
+  color: #E0E0E0;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Redefining glass-card style to be tightly integrated component grid boxes */
+.glass-card {
+  background-color: #111114 !important;
+  border: 1px solid #2A2A2E !important;
+  border-radius: 0.75rem !important; /* rounded-xl rounded styles */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.55) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: #2D5BFF !important;
+  box-shadow: 0 0 16px rgba(45, 91, 255, 0.18) !important;
+}
+
+/* Monospace fonts alignment for technical listings */
+.tech-mono {
+  font-family: "JetBrains Mono", monospace !important;
+}
+
+/* Progress-bar animation & layout overrides */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2E;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2D5BFF;
+}
+
+/* Smooth transitions */
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

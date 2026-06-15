@@ -1,0 +1,8 @@
+{
+  "name": "Car Insight Pro",
+  "description": "Car Insight Pro: Professional vehicle diagnostics, real-time insights, live telemetry, and vehicle health monitoring platform for OBD-II compatible vehicles.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
