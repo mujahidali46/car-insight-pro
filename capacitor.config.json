@@ -1,0 +1,9 @@
+{
+  "appId": "com.carinsight.pro",
+  "appName": "Car Insight Pro",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}
